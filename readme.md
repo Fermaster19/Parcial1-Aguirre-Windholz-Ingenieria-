@@ -1,13 +1,11 @@
-# Sistema de Inventario de Perfumes
+ Sistema de Inventario de Perfumes
 
-## Integrantes
+ Integrantes
 
-- Nombre y Apellido Integrante 1
-- Nombre y Apellido Integrante 2
-
----
-
-## Descripción del Proyecto
+- Aguirre Claudio Benjamin
+- Windholz Cristhian Valentin
+  
+ Descripción del Proyecto
 
 Este proyecto consiste en un MVP (Producto Mínimo Viable) para la gestión de un inventario de perfumes.
 
@@ -23,11 +21,11 @@ El objetivo es aplicar conceptos de Ingeniería de Software utilizando arquitect
 
 ---
 
-# Arquitectura MVC
+ Arquitectura MVC
 
 El proyecto fue desarrollado siguiendo el patrón MVC (Modelo - Vista - Controlador), separando responsabilidades para mejorar la organización y mantenimiento del código.
 
-## Modelo (Model)
+ Modelo (Model)
 
 Se encarga de los datos y lógica de negocio.
 
@@ -45,7 +43,7 @@ Funciones:
 
 ---
 
-## Vista (View)
+ Vista (View)
 
 Se encarga de mostrar información al usuario mediante la interfaz HTML.
 
@@ -60,7 +58,7 @@ Funciones:
 
 ---
 
-## Controlador (Controller)
+ Controlador (Controller)
 
 Actúa como intermediario entre Modelo y Vista.
 
@@ -76,9 +74,9 @@ Funciones:
 
 ---
 
-# Patrones de Diseño Implementados
+ Patrones de Diseño Implementados
 
-## Singleton
+ Singleton
 
 Implementado en:
 
@@ -86,28 +84,28 @@ Implementado en:
 class Inventario
 ```
 
-### Función
+ Función
 
 Garantiza una única instancia del inventario dentro del sistema.
 
-### Problema que resuelve
+ Problema que resuelve
 
 Evita la creación de múltiples inventarios distintos y mantiene centralizados los datos.
 
 ---
 
-## Strategy
+ Strategy
 
 Implementado mediante:
 
 - `OrdenPrecio`
 - `OrdenStock`
 
-### Función
+ Función
 
 Permite cambiar dinámicamente el algoritmo utilizado para ordenar perfumes.
 
-### Problema que resuelve
+ Problema que resuelve
 
 Evita modificar el código principal cada vez que se agrega un nuevo criterio de ordenamiento.
 
@@ -118,7 +116,7 @@ Ejemplos:
 
 ---
 
-# Testing Unitario
+ Testing Unitario
 
 Se utilizó Jest para validar el funcionamiento del sistema.
 
@@ -129,9 +127,8 @@ Se realizaron pruebas sobre:
 - Validación de datos
 - Funcionamiento general del inventario
 
----
 
-# Tecnologías Utilizadas
+Tecnologías Utilizadas
 
 - HTML5
 - CSS3
@@ -143,7 +140,7 @@ Se realizaron pruebas sobre:
 
 ---
 
-# Estructura del Proyecto
+ Estructura del Proyecto
 
 ```txt
 inventario-perfumes/
@@ -151,17 +148,14 @@ inventario-perfumes/
 ├── index.html
 ├── style.css
 ├── app.js
-├── tests/
-│   └── inventario.test.js
 ├── package.json
 └── README.md
 ```
 
----
 
-# Instrucciones de ejecución
+ Instrucciones de ejecución
 
-## Clonar repositorio
+ Clonar repositorio
 
 ```bash
 git clone URL_DEL_REPOSITORIO
@@ -169,7 +163,7 @@ git clone URL_DEL_REPOSITORIO
 
 ---
 
-## Instalar dependencias
+ Instalar dependencias
 
 ```bash
 npm install
@@ -177,7 +171,7 @@ npm install
 
 ---
 
-## Ejecutar proyecto
+ Ejecutar proyecto
 
 Abrir el archivo:
 
@@ -193,15 +187,7 @@ start index.html
 
 ---
 
-## Ejecutar tests
-
-```bash
-npm test
-```
-
----
-
-# Flujo de trabajo Git utilizado
+ Flujo de trabajo Git utilizado
 
 Para garantizar el trabajo colaborativo se utilizó GitHub mediante ramas independientes.
 
@@ -234,6 +220,6 @@ No se realizaron cambios directamente sobre la rama `main`.
 
 ---
 
-# Conclusión
+ Conclusión
 
 El proyecto permitió aplicar conceptos de arquitectura de software y trabajo colaborativo mediante Git, implementando un sistema simple y funcional siguiendo buenas prácticas de desarrollo.
